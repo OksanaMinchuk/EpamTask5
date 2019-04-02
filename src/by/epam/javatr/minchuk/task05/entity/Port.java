@@ -1,8 +1,13 @@
 package by.epam.javatr.minchuk.task05.entity;
 
+import by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin;
+import by.epam.javatr.minchuk.task05.util.ConstantConfigurator;
 import org.apache.log4j.Logger;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -16,48 +21,56 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Port {
 
     private static final Logger LOGGER;
-    private static final int COUNT_DOCKS = 3;
 
     private static Lock lock;
-    private static Port instance;
-
-    private Storage storage;
-    private Semaphore semaphore;
 
     static {
         LOGGER = Logger.getRootLogger();
         lock = new ReentrantLock();
     }
 
-    private Port() {
-        this.semaphore = new Semaphore(COUNT_DOCKS);
+    private Semaphore semaphore;
+    private static Storage storage;
+    private static Queue<Dock> dockList;
+
+    public Port(Storage storage, Queue<Dock> dockList) {
+        this.semaphore = new Semaphore(Integer.valueOf(ConstantConfigurator.COUNT_DOCKS), true);
+        this.storage = storage;
+        this.dockList = new LinkedList<>();
+        this.dockList.addAll(dockList);
     }
 
-    public static Port getInstance() {
-        lock.lock();
+    public Dock getResourseDock(long maxWaitMillis) {//throws PortResourseExceptoin {
+        Dock currentDock = null;
         try {
-            if (instance == null) {
-                instance = new Port();
+            if (semaphore.tryAcquire(maxWaitMillis, TimeUnit.MILLISECONDS)) {
+                currentDock = dockList.poll();
+                return currentDock;
             }
-            return instance;
-        } finally {
-            lock.unlock();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        return currentDock;
+       // throw new PortResourseExceptoin("timeout exceeded");
     }
 
-    public Storage getStorage() {
+    public void returnResourseDock(Dock dock) {
+        dockList.add(dock);
+    }
+
+    public static Storage getStorage() {
         return storage;
     }
 
-    public void setStorage(Storage storage) {
-        this.storage = storage;
+    public static void setStorage(Storage storage) {
+        Port.storage = storage;
     }
 
-    public Semaphore getSemaphore() {
-        return semaphore;
+    public static Queue<Dock> getDockList() {
+        return dockList;
     }
 
-    public void setSemaphore(Semaphore semaphore) {
-        this.semaphore = semaphore;
+    public static void setDockList(Queue<Dock> dockList) {
+        Port.dockList.addAll(dockList);
     }
 }

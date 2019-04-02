@@ -1,7 +1,9 @@
 package by.epam.javatr.minchuk.task05.entity;
 
-import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
+import by.epam.javatr.minchuk.task05.util.ConstantConfigurator;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * Class {@code Storage}
@@ -12,19 +14,24 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class Storage {
 
-    private static final int DEFAULT_STORAGE_CAPASITY = 10_000;
-
-    private Queue<Container> containers = null;
+    private BlockingQueue<Container> containers;
 
     public Storage() {
-        this.containers = new LinkedBlockingQueue<>(DEFAULT_STORAGE_CAPASITY);
+        this.containers = new ArrayBlockingQueue<Container>(Integer.valueOf(ConstantConfigurator.DEFAULT_STORAGE_CAPACITY));
+        for (int i = 0; i < containers.size(); i++) {
+            this.containers.add(new Container());
+        }
     }
 
-    public Container removeContainer() {
-        return containers.poll();
+    public Container removeContainer() throws InterruptedException {
+        return this.containers.take();
     }
 
-    public boolean addContainer(Container container) {
-        return this.containers.add(container);
+    public void addContainer(Container container) {
+        try {
+            this.containers.put(container);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

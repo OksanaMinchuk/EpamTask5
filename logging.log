@@ -1,0 +1,95 @@
+00:45:01 INFO  root:62 - Ship #10 get to dock #0
+00:45:01 INFO  root:62 - Ship #12 get to dock #2
+00:45:01 INFO  root:62 - Ship #18 get to dock #1
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 INFO  root:36 - Dock id = 1 is taken.
+00:45:01 INFO  root:73 - Ship #18 : 1dock release
+00:45:01 INFO  root:36 - Dock id = 2 is taken.
+00:45:01 INFO  root:73 - Ship #12 : 2dock release
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 INFO  root:36 - Dock id = 0 is taken.
+00:45:01 INFO  root:73 - Ship #10 : 0dock release
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:45:01 ERROR root:69 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:20 INFO  root:66 - Time is over. Ship #15 go out
+00:50:20 INFO  root:66 - Time is over. Ship #16 go out
+00:50:20 INFO  root:63 - Ship #10 get to dock #0
+00:50:21 INFO  root:36 - Dock id = 0 is taken.
+00:50:21 INFO  root:74 - Ship #10 : 0dock release
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:50:22 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:42 INFO  root:63 - Ship #10 get to dock #0
+00:51:42 INFO  root:63 - Ship #15 get to dock #1
+00:51:42 INFO  root:74 - Ship #15 : 1dock release
+00:51:42 INFO  root:63 - Ship #14 get to dock #0
+00:51:42 INFO  root:74 - Ship #14 : 0dock release
+00:51:42 INFO  root:74 - Ship #10 : 0dock release
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:51:44 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:05 INFO  root:66 - Time is over. Ship #19 go out
+00:54:05 INFO  root:63 - Ship #17 get to dock #0
+00:54:05 INFO  root:66 - Time is over. Ship #10 go out
+00:54:06 INFO  root:36 - Dock id = 0 is taken.
+00:54:06 INFO  root:74 - Ship #17 : 0dock release
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:54:10 ERROR root:70 - by.epam.javatr.minchuk.task05.exception.PortResourseExceptoin: timeout exceeded
+00:58:20 INFO  root:63 - Ship #10 get to dock #0
+00:58:20 INFO  root:66 - Time is over. Ship #16 go out
+00:58:20 INFO  root:66 - Time is over. Ship #15 go out
+00:58:21 INFO  root:36 - Dock id = 0 is taken.
+00:58:21 INFO  root:74 - Ship #10 : 0dock release
+00:58:25 INFO  root:66 - Time is over. Ship #12 go out
+00:58:25 INFO  root:66 - Time is over. Ship #18 go out
+00:58:25 INFO  root:66 - Time is over. Ship #17 go out
+00:58:25 INFO  root:66 - Time is over. Ship #19 go out
+00:58:25 INFO  root:66 - Time is over. Ship #11 go out
+00:58:25 INFO  root:66 - Time is over. Ship #14 go out
+00:58:25 INFO  root:66 - Time is over. Ship #13 go out

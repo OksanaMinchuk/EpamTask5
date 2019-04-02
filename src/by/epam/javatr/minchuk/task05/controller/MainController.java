@@ -1,10 +1,10 @@
 package by.epam.javatr.minchuk.task05.controller;
 
 import by.epam.javatr.minchuk.task05.entity.Port;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import by.epam.javatr.minchuk.task05.entity.Ship;
+import by.epam.javatr.minchuk.task05.entity.Storage;
+import by.epam.javatr.minchuk.task05.util.DockCreator;
+import by.epam.javatr.minchuk.task05.util.ShipCreator;
 
 /**
  * Class {@code MainController}
@@ -17,6 +17,18 @@ public class MainController {
 
     public static void main(String[] args) {
 
-        Port port = Port.getInstance();
+       Port port = new Port(new Storage(), DockCreator.createDocksList());
+
+       Ship[] ships = ShipCreator.createShips(port);
+
+       for (Ship ship: ships) {
+           try {
+               ship.getThread().join();
+           } catch (InterruptedException e) {
+               e.printStackTrace();
+           }
+       }
+
     }
+
 }
